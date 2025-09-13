@@ -5,7 +5,7 @@ import fetch from 'node-fetch';
 
 export default async function handler(req, res) {
   // Replace this URL with the URL of your Render application.
-  const renderServerUrl = 'https://your-render-app.onrender.com';
+  const renderServerUrl = 'https://n8n-1-x6d9.onrender.com';
 
   console.log(`Pinging Render server at: ${renderServerUrl}`);
 
