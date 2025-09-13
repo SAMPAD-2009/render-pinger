@@ -1,0 +1,13 @@
+name: Wake Up Render Service
+
+on:
+  schedule:
+    # Runs every 10 minutes to prevent Render from sleeping
+    - cron: '*/10 * * * *'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Service
+        run: curl ${{ secrets.RENDER_SERVICE_URL }}
